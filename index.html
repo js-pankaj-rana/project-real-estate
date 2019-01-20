@@ -6,51 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Real Estate Site</title>
+    <link rel="stylesheet" href="assest/css/reset.css" type="text/css" />    
+    <link rel="stylesheet" href="assest/css/style.css" type="text/css" />    
+    <!-- https://fontawesome.com/icons/bars?style=solid -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="hamburger">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="menu">
+                        <a href="#" class="hide md lg logo"><li>Real Estate Site</li></a>
+                        <a href="#" class="active"><li>Home</li></a>
+                        <a href="#"><li>About</li></a>
+                        <a href="#"><li>Room</li></a>
 
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Pages</li></a>
+                        <a href="#"><li>Contacts</li></a>
+                      </ul>
             </div>
-            <div class="menu">
-                <ul>
-                    <li class=" hide md lg logo">
-                        <a href="#">Real Estate Site</a>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Room</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Pages</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacts</a>
-                    </li>
-                </ul>
-            </div>
+            
 
             <div class="hide sm logo">
                 <a href="#">Real Estate Site</a>
             </div>
-                
-
-
-          <div class="contact-cta">
-            <a href="icon"></a>
-            <a href="#">BOOK NOW</a>
-          </div>
-            <div class="contact-form">
+            <div class="nav-right">
+                    <div class="contact-cta">
+                            <a class="fas fa-pencil-alt"> <span class="hide sm">BOOK NOW</span></a>
+                          </div>
+                          <div class="mobile">
+                                <a href="tel:+18001234567" class="fas fa-mobile-alt"><span class="hide sm">+1-800-1234-567</span></a>
+                           </div> 
+                           <div class="magnifier magnifier-nav">
+                                <i class="fas fa-search"></i>
+                            </div> 
+            </div>
+         
+            <div class="contact-form" style="display:none">
                 <form name="contact-form" onsubmit="javascript:void(0)">
                     <h4>Book Now</h4>
                     <div class="form-row">
@@ -71,15 +69,9 @@
                 </form>
             </div>
 
-           <div class="mobile">
-
-                <a href="tel:+18001234567">+1-800-1234-567</a>
-
-           </div> 
-           <div class="magnifier magnifier-nav">
-               
-            </div> 
-            <div class="search">
+           
+          
+            <div class="search" style="display:none">
                 <form name="search-nav-form">
                     <span class="magnifier magnifier-inline"></span>
                     <input type="text" placeholder="Search..." />

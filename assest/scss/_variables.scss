@@ -1,0 +1,47 @@
+$primary-color: red;
+$nav-color:#303030;
+$menu-active:#C19B76;
+$btn-color: #767674;
+$btn-hover-color: #535252;
+$color-para: rgba(21,21,21,.7);
+$color-para-dark:#151515;
+$black: #000;
+
+$grey-dark: #333;
+$grey-light: #666;
+$grey-lighter: #999;
+
+$white: #fff;
+$strip: #036;
+$green: #00ff00; 
+$green-light: lighten($green, 10%);
+$green-lightest: lighten($green, 20%);
+
+
+$size-xl: 4rem;
+$size-lg: 3rem;
+$size-md: 2rem;
+$size-sm: 1rem;
+$size-xs: 0.8rem;
+
+$font-stand: 'Old Standard TT', serif;
+$font-work: 'Work Sans', sans-serif;
+
+%common-box {
+    border: 1px solid $grey-dark;
+    padding: $size-sm;
+    color: $green;
+    background: $white;
+  }
+
+%fontstandard {
+    font-family: 'Old Standard TT', serif;
+}
+%fontworksans {
+    font-family: 'Work Sans', sans-serif;
+}
+$mobile: "only screen and (max-width : 767px)";
+$tablet: "only screen and (min-width : 768px) and (max-width : 1023px)";
+$desktop: "only screen and (min-width : 1024px)";
+
+
