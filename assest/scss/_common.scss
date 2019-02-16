@@ -5,10 +5,55 @@ html {
     &.md {
         display: none;
     }
+
     &.lg {
         display: none;
     }
     &.sm {
         display: none;
-    }        
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    
+    &--space-around {
+        justify-content: space-around;
+    }
+    &--space-between {
+        justify-content: space-between;
+    }
+    &--column {
+        flex-direction: column;
+    }
+}
+
+.error {
+    display: none;
+    color:red;
+    font-size: 1.4rem;
+    position: absolute;
+}
+
+
+.list-unstyle  {
+    list-style-type: none;
+}
+
+.btn {
+    display: inline-block;
+    box-shadow: none;
+    border-radius: 3px;
+    background: $menu-active;
+    padding: 0.3rem 1.5rem;
+    text-align: center;
+    border: 1px solid $menu-active;
+    &:hover {
+        background: $btn-hover-color;
+        border: 1px solid $btn-hover-color;
+    }
 }

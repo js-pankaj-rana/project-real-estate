@@ -4,6 +4,9 @@
     height: 5rem;
     background-color: $nav-color;
     display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
     justify-content: space-between;
     box-shadow: 0 0 10px 0 rgba(0,0,0,.05);
     font-family: $font-work;
@@ -12,7 +15,7 @@
     }
 
     .fas {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         color: $white;
         line-height: 5rem;
 
@@ -31,7 +34,7 @@
 
     .hamburger {
         position: relative;
-        top: 1.2rem;
+        top: 1.56rem;
         left: 1rem;
         z-index: 1;
         -webkit-user-select: none;
@@ -58,7 +61,7 @@
         span {
             display: block;
             width: 3.3rem;
-            height: 0.4rem;
+            height: 0.2rem;
             margin-bottom: 0.5rem;
             position: relative;
             background: $white;
