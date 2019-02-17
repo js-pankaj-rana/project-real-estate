@@ -53,7 +53,8 @@ html {
   right: 0;
   justify-content: space-between;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Work Sans", sans-serif;
+  z-index: 99; }
   .navbar a {
     text-decoration: none; }
   .navbar .fas {
@@ -89,7 +90,7 @@ html {
       -webkit-touch-callout: none; }
     .navbar .hamburger span {
       display: block;
-      width: 3.3rem;
+      width: 2.7rem;
       height: 0.2rem;
       margin-bottom: 0.5rem;
       position: relative;
@@ -153,7 +154,8 @@ html {
   .heroshot .title, .heroshot .sub-title {
     font-size: 2.5rem;
     color: #fff;
-    padding: 0 5rem; }
+    padding: 0 5rem;
+    font-family: "Old Standard TT", serif; }
   .heroshot .sub-title {
     font-size: 1.25rem;
     margin-top: 3rem;
@@ -162,15 +164,19 @@ html {
     margin: 1rem 1rem 0;
     position: relative; }
     .heroshot .contact-form .form-row .select-opt {
+      font-family: "Work Sans", sans-serif;
       height: 50px;
       border-radius: 3px;
       background-color: #ffffff;
-      padding: 0 1.3rem;
+      padding: 0 1.6rem;
       color: #333333;
       width: 100%;
       border: 1px solid #fff;
       box-shadow: 0;
-      text-align: left; }
+      text-align: left;
+      font-size: 1.7rem; }
+      .heroshot .contact-form .form-row .select-opt:focus, .heroshot .contact-form .form-row .select-opt:active {
+        outline: none; }
     .heroshot .contact-form .form-row .dropdown {
       width: .71rem;
       height: .71rem;
@@ -183,10 +189,12 @@ html {
       transition: all 0.35s ease-in; }
     .heroshot .contact-form .form-row .list-unstyle {
       display: none;
-      background: #fff; }
+      background: #fff;
+      font-family: "Work Sans", sans-serif;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; }
       .heroshot .contact-form .form-row .list-unstyle li {
         line-height: 3rem;
-        border-bottom: 1px solid #d7d7d7;
         font-size: 1.4rem;
         text-align: left;
         cursor: pointer;
@@ -195,10 +203,16 @@ html {
         .heroshot .contact-form .form-row .list-unstyle li:hover {
           background: #767674;
           color: #fff; }
+        .heroshot .contact-form .form-row .list-unstyle li.active {
+          background: #C19B76;
+          color: #fff; }
     .heroshot .contact-form .form-row.active .list-unstyle {
       display: block; }
     .heroshot .contact-form .form-row.active .dropdown {
       transform: rotate(135deg); }
+    .heroshot .contact-form .form-row.active .select-opt {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; }
   .heroshot .contact-form .btn {
     width: 100%;
     height: 4rem;

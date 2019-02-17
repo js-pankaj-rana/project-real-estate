@@ -11,7 +11,8 @@
     .title {
         font-size: 2.5rem;
         color: $white;  
-        padding: 0 5rem;  
+        padding: 0 5rem; 
+        font-family: $oldstd; 
     }
     .sub-title {
         @extend .title;
@@ -25,15 +26,20 @@
             margin: 1rem 1rem 0;
             position: relative;
             .select-opt {
+                    font-family: $worksans;
                     height: 50px;
                     border-radius:3px;
                     background-color: #ffffff;
-                    padding: 0 1.3rem;
+                    padding: 0 1.6rem;
                     color: #333333; 
                     width: 100%;
                     border:1px solid #fff;
                     box-shadow: 0;
                     text-align: left;
+                    font-size: 1.7rem;
+                    &:focus, &:active {
+                      outline: none;  
+                    }
                }
                .dropdown {
                    width: .71rem;
@@ -50,9 +56,11 @@
             .list-unstyle {
                 display: none;
                 background: $white;
+                font-family: $worksans;
+                border-bottom-left-radius:3px;
+                border-bottom-right-radius:3px; 
                 li {
                     line-height: 3rem;
-                    border-bottom: 1px solid #d7d7d7;
                     font-size: 1.4rem;
                     text-align: left;
                     cursor: pointer;
@@ -62,6 +70,10 @@
                         background:$btn-color;
                         color:$white
                     }
+                    &.active {
+                        background: $menu-active;
+                        color:$white;
+                    }
                 }
             }
           &.active {
@@ -70,6 +82,10 @@
               }
               .dropdown {
                 transform: rotate(135deg);
+              }
+              .select-opt {
+                  border-bottom-left-radius:0;
+                  border-bottom-right-radius:0; 
               }
           }  
         }
