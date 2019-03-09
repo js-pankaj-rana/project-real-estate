@@ -4,21 +4,20 @@
 @import './nav';
 
 .heroshot {
-    padding-top: 10rem;
+    padding: 10rem 0 5rem;
     background:url(./../../images/bg-image-2.jpg) no-repeat center center;
-    min-height: 100vh;
     box-sizing: border-box;
     .title {
-        font-size: 2.5rem;
+        font-size: 3.4rem;
         color: $white;  
-        padding: 0 5rem; 
+        padding: .8rem 3rem; 
         font-family: $oldstd; 
     }
     .sub-title {
         @extend .title;
-        font-size: 1.25rem;
-        margin-top:3rem;
-        margin-bottom: 3rem; 
+        font-size: 1.8rem;
+        margin-top:0rem;
+        margin-bottom: 5rem; 
     }
 
     .contact-form {
@@ -27,16 +26,16 @@
             position: relative;
             .select-opt {
                     font-family: $worksans;
-                    height: 50px;
-                    border-radius:3px;
+                    line-height: 26px;
+                    border-radius:6px;
                     background-color: #ffffff;
-                    padding: 0 1.6rem;
-                    color: #333333; 
+                    padding: 1.5rem 1.6rem;
+                    color: $color-para; 
                     width: 100%;
                     border:1px solid #fff;
                     box-shadow: 0;
                     text-align: left;
-                    font-size: 1.7rem;
+                    font-size: 1.4rem;
                     &:focus, &:active {
                       outline: none;  
                     }
@@ -51,7 +50,6 @@
                    top:1.8rem;
                    transform: rotate(-45deg);
                    transition: all 0.35s ease-in;
-                  
                }
             .list-unstyle {
                 display: none;
@@ -91,11 +89,59 @@
         }
         .btn {
             width: 100%;
-            height: 4rem;
-            border-radius: 3px;
+            line-height: 2.6rem;
+            border-radius: 6px;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: $white;
+            padding: 1.4rem 0;
         }
     }
 }
+
+.section {
+    padding: 5rem 1.5rem;
+    .heading {
+        font-family: $oldstd;
+        padding-bottom: 2rem; 
+        &-type-1 {
+            font-size: 2.4rem;
+            color: $color-para-dark;
+            font-weight: 700;
+        }
+        em { 
+            font-style: italic;
+            font-weight: normal;
+        }
+    }
+    .para {
+        font-family: $worksans;
+        font-size: 1.4rem;
+        line-height: 2.35rem;
+        color: $color-para;
+        & + .para {
+            margin-top:1rem; 
+        }
+    }
+    .signature {
+        padding-top:5rem; 
+        img{
+            text-align: left;
+            display: inline-block;
+        }
+        .person-sign {
+            font-family: $worksans;
+            color:$color-para-dark;
+            line-height: 3rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+        .person-desg {
+            font-family: $worksans;
+            color:$color-para;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+

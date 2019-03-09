@@ -147,34 +147,33 @@ html {
       overflow: hidden; }
 
 .heroshot {
-  padding-top: 10rem;
+  padding: 10rem 0 5rem;
   background: url(./../../images/bg-image-2.jpg) no-repeat center center;
-  min-height: 100vh;
   box-sizing: border-box; }
   .heroshot .title, .heroshot .sub-title {
-    font-size: 2.5rem;
+    font-size: 3.4rem;
     color: #fff;
-    padding: 0 5rem;
+    padding: .8rem 3rem;
     font-family: "Old Standard TT", serif; }
   .heroshot .sub-title {
-    font-size: 1.25rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem; }
+    font-size: 1.8rem;
+    margin-top: 0rem;
+    margin-bottom: 5rem; }
   .heroshot .contact-form .form-row {
     margin: 1rem 1rem 0;
     position: relative; }
     .heroshot .contact-form .form-row .select-opt {
       font-family: "Work Sans", sans-serif;
-      height: 50px;
-      border-radius: 3px;
+      line-height: 26px;
+      border-radius: 6px;
       background-color: #ffffff;
-      padding: 0 1.6rem;
-      color: #333333;
+      padding: 1.5rem 1.6rem;
+      color: rgba(21, 21, 21, 0.7);
       width: 100%;
       border: 1px solid #fff;
       box-shadow: 0;
       text-align: left;
-      font-size: 1.7rem; }
+      font-size: 1.4rem; }
       .heroshot .contact-form .form-row .select-opt:focus, .heroshot .contact-form .form-row .select-opt:active {
         outline: none; }
     .heroshot .contact-form .form-row .dropdown {
@@ -215,8 +214,44 @@ html {
       border-bottom-right-radius: 0; }
   .heroshot .contact-form .btn {
     width: 100%;
-    height: 4rem;
-    border-radius: 3px;
+    line-height: 2.6rem;
+    border-radius: 6px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fff; }
+    color: #fff;
+    padding: 1.4rem 0; }
+
+.section {
+  padding: 5rem 1.5rem; }
+  .section .heading {
+    font-family: "Old Standard TT", serif;
+    padding-bottom: 2rem; }
+    .section .heading-type-1 {
+      font-size: 2.4rem;
+      color: #151515;
+      font-weight: 700; }
+    .section .heading em {
+      font-style: italic;
+      font-weight: normal; }
+  .section .para {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.35rem;
+    color: rgba(21, 21, 21, 0.7); }
+    .section .para + .para {
+      margin-top: 1rem; }
+  .section .signature {
+    padding-top: 5rem; }
+    .section .signature img {
+      text-align: left;
+      display: inline-block; }
+    .section .signature .person-sign {
+      font-family: "Work Sans", sans-serif;
+      color: #151515;
+      line-height: 3rem;
+      font-size: 1.6rem;
+      font-weight: 600; }
+    .section .signature .person-desg {
+      font-family: "Work Sans", sans-serif;
+      color: rgba(21, 21, 21, 0.7);
+      font-size: 1.4rem; }
