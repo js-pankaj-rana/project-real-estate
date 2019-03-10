@@ -7,4 +7,10 @@ $(document).ready(function(){
         $(this).parent().siblings('.select-opt').val( $(this).text() );
         $(this).addClass('active').siblings().removeClass('active');
     })
+
+    $(window).scroll(function(){
+        var scrT = $(this).scrollTop();
+        
+    })
+    
 })

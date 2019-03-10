@@ -22,6 +22,8 @@ html {
     justify-content: space-between; }
   .flex--column {
     flex-direction: column; }
+  .flex.mobile-flex-dir-column {
+    flex-direction: column; }
 
 .error {
   display: none;
@@ -43,6 +45,35 @@ html {
   .btn:hover {
     background: #535252;
     border: 1px solid #535252; }
+  .btn-default {
+    display: inline-block;
+    box-shadow: none;
+    border-radius: 3px;
+    background: #C19B76;
+    padding: 0.3rem 1.5rem;
+    text-align: center;
+    border: 1px solid #C19B76;
+    text-transform: uppercase;
+    color: #fff; }
+  .btn-lg {
+    padding: 1.4rem 3.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5; }
+
+.bg-grey {
+  background-color: #f5f6fa; }
+
+.p-y-10 {
+  padding-top: 1rem; }
+
+.p-y-20 {
+  padding-top: 2rem; }
+
+.p-y-30 {
+  padding-top: 3rem; }
+
+.p-y-40 {
+  padding-top: 4rem; }
 
 .navbar {
   height: 5rem;
@@ -255,3 +286,93 @@ html {
       font-family: "Work Sans", sans-serif;
       color: rgba(21, 21, 21, 0.7);
       font-size: 1.4rem; }
+  .section .left-sec {
+    padding-top: 5rem;
+    overflow-x: hidden; }
+    .section .left-sec img {
+      width: 100%; }
+  .section .box-room {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-top: 5rem; }
+    .section .box-room:hover .thumbnail-classic-caption {
+      opacity: 1;
+      z-index: 2; }
+    .section .box-room .thumbnail-classic-caption {
+      opacity: 0;
+      transition: all 0.55s ease-in;
+      color: #fff;
+      position: absolute;
+      left: 3rem;
+      bottom: 2rem;
+      line-height: 3rem;
+      text-align: left; }
+      .section .box-room .thumbnail-classic-caption .thumbnail-classic-title {
+        font-family: "Old Standard TT", serif;
+        font-size: 1.8rem; }
+      .section .box-room .thumbnail-classic-caption .thumbnail-classic-text {
+        font-family: "Work Sans", sans-serif;
+        font-size: 1.4rem; }
+    .section .box-room figure {
+      text-align: center; }
+      .section .box-room figure.gallary {
+        overflow: hidden;
+        width: 100%;
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        position: relative;
+        z-index: 0; }
+        .section .box-room figure.gallary::before {
+          content: '';
+          width: 100%;
+          position: absolute;
+          left: 0;
+          height: 100%;
+          top: 0;
+          z-index: 1;
+          cursor: pointer; }
+        .section .box-room figure.gallary:hover::before {
+          background: rgba(0, 0, 0, 0.45); }
+    .section .box-room li {
+      line-height: 3.3rem; }
+    .section .box-room .btn-effect {
+      text-decoration: none;
+      color: #C19B76;
+      overflow-y: hidden;
+      height: 2.8rem;
+      position: relative;
+      display: block;
+      line-height: 2.8rem;
+      margin-top: 1rem; }
+      .section .box-room .btn-effect .content-original {
+        color: #C19B76;
+        position: relative;
+        transition: all 0.34s ease-in;
+        top: 0px; }
+      .section .box-room .btn-effect .content-dubbed {
+        position: relative;
+        bottom: -0.9rem;
+        transition: all 0.34s ease-in; }
+      .section .box-room .btn-effect:hover .content-original, .section .box-room .btn-effect:focus .content-original, .section .box-room .btn-effect:active .content-original {
+        color: #C19B76;
+        top: -3rem; }
+      .section .box-room .btn-effect:hover .content-dubbed, .section .box-room .btn-effect:focus .content-dubbed, .section .box-room .btn-effect:active .content-dubbed {
+        bottom: 2.8rem; }
+    .section .box-room .hover-effect {
+      color: #C19B76;
+      font-size: 1.8rem;
+      font-weight: 400;
+      font-family: "Work Sans", sans-serif; }
+    .section .box-room .content-list {
+      position: relative;
+      display: block;
+      font-size: 1.8rem;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400; }
+    .section .box-room .room-type {
+      font-family: "Old Standard TT", serif;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      letter-spacing: 0; }

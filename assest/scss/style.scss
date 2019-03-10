@@ -2,6 +2,7 @@
 @import './variables';
 @import './common';
 @import './nav';
+@import './animation';
 
 .heroshot {
     padding: 10rem 0 5rem;
@@ -40,17 +41,17 @@
                       outline: none;  
                     }
                }
-               .dropdown {
-                   width: .71rem;
-                   height: .71rem;
-                   border-left: 1px solid $black;
-                   border-bottom: 1px solid $black;
-                   position: absolute;
-                   right: 2rem;
-                   top:1.8rem;
-                   transform: rotate(-45deg);
-                   transition: all 0.35s ease-in;
-               }
+            .dropdown {
+                width: .71rem;
+                height: .71rem;
+                border-left: 1px solid $black;
+                border-bottom: 1px solid $black;
+                position: absolute;
+                right: 2rem;
+                top:1.8rem;
+                transform: rotate(-45deg);
+                transition: all 0.35s ease-in;
+            }
             .list-unstyle {
                 display: none;
                 background: $white;
@@ -96,6 +97,7 @@
             color: $white;
             padding: 1.4rem 0;
         }
+
     }
 }
 
@@ -142,6 +144,159 @@
             font-size: 1.4rem;
         }
     }
+    .left-sec {
+        padding-top: 5rem; 
+        overflow-x: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    
+    .box-room {
+        max-width: 100%;
+        overflow: hidden;
+        &:first-child {
+            padding-top: 2rem;    
+        }
+        padding-top: 5rem;
+        &:hover {
+            .thumbnail-classic-caption {
+                opacity: 1;
+                z-index: 2;
+            }    
+        }
+        .thumbnail-classic-caption {
+            opacity: 0;
+            transition: all 0.55s ease-in;
+            color: $white;
+            position: absolute;
+            left: 3rem;
+            bottom: 2rem;
+            line-height: 3rem;
+            text-align: left;
+            .thumbnail-classic-title {
+                font-family: $oldstd;
+                font-size: 1.8rem;
+            }
+            .thumbnail-classic-text {
+                font-family: $worksans;
+                font-size: 1.4rem;
+            }
+        }
+       
+        figure {
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                &:before {
+                opacity: 1;
+                visibility: visible;
+                }
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(21,21,21,.4);
+                transition: .4s ease-in-out;
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                cursor: pointer;
+               
+            }
+            
+            &.gallary{
+                overflow: hidden;
+                width: 100%;
+                min-height: 200px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center bottom;
+                position: relative;
+                z-index: 0;
+                &::before{
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    height: 100%;
+                    top:0;
+                    z-index: 1;
+                    cursor: pointer;
+                }
+               &:hover{
+                &::before{
+                    background: rgba(0, 0, 0, 0.45);
+                }
+               } 
+            }
+        }
+
+        li {
+            line-height: 3.3rem;
+        }
+        .btn-effect {
+            text-decoration: none;
+            color: $menu-active;
+            overflow-y: hidden;
+            height: 2.8rem;
+            position: relative;
+            display: block;
+            line-height: 2.8rem;
+            margin-top: 1rem;
+            .content-original {
+                color: $menu-active;
+                position: relative;
+                transition: all 0.34s ease-in;
+                top: 0px;
+            }
+            .content-dubbed {
+                position: relative;
+                bottom: -0.9rem;
+                transition: all 0.34s ease-in;
+            }
+            &:hover, &:focus, &:active{
+                .content-original {
+                    color: $menu-active;
+                    top: -3rem;
+                }
+                .content-dubbed {
+                    bottom: 2.8rem;
+                }
+            }
+        }
+
+        .hover-effect{
+            color: $menu-active;
+            font-size: 1.8rem;
+            font-weight: 400;
+            font-family: $worksans;
+           
+            
+            
+            
+        }
+        .content-list {
+            position: relative;
+            display: block;
+            font-size: 1.8rem;
+            font-family: $worksans;
+            font-weight: 400;
+        }   
+        .room-type {
+            font-family: $oldstd;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            letter-spacing: 0;
+        }
+    }
 }
+
 
 

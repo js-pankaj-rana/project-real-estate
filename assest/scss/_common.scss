@@ -30,6 +30,9 @@ html {
     &--column {
         flex-direction: column;
     }
+    &.mobile-flex-dir-column {
+        flex-direction: column;
+    }
 }
 
 .error {
@@ -55,5 +58,54 @@ html {
     &:hover {
         background: $btn-hover-color;
         border: 1px solid $btn-hover-color;
+    }
+    &-default {
+        display: inline-block;
+        box-shadow: none;
+        border-radius: 3px;
+        background: $menu-active;
+        padding: 0.3rem 1.5rem;
+        text-align: center;
+        border: 1px solid $menu-active;
+        text-transform: uppercase;
+        color: $white;
+     }
+     &-lg{
+        padding: 1.4rem 3.5rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+     }
+}
+
+.bg-grey {
+    background-color: $grey-bg-light;
+}
+.p-y-10 {
+    padding-top: 1rem;
+}
+.p-y-20 {
+    padding-top: 2rem;
+}
+.p-y-30 {
+    padding-top: 3rem;
+}
+.p-y-40 {
+    padding-top: 4rem;
+}
+
+.effect {
+    opacity: 0;
+    overflow: hidden;
+    &-left {
+        left: -90vw;
+    }
+    &-right {
+        right: -90vw;
+    }
+    &-top {
+        top: -10vh;
+    }
+    &-bottom {
+        bottom: -10vh;
     }
 }
