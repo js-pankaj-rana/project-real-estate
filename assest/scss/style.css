@@ -311,6 +311,10 @@ html {
     top: -10vh;
     opacity: 0;
   }
+  50% {
+    top: 0rem;
+    opacity: 0.3;
+  }
   100% {
     top: 0rem;
     opacity: 1;
@@ -321,6 +325,10 @@ html {
   0% {
     top: -10vh;
     opacity: 0;
+  }
+  50% {
+    top: 0rem;
+    opacity: 0.3;
   }
   100% {
     top: 0rem;
@@ -333,6 +341,10 @@ html {
     bottom: -10vh;
     opacity: 0;
   }
+  50% {
+    top: 0rem;
+    opacity: 0.3;
+  }
   100% {
     bottom: 0rem;
     opacity: 1;
@@ -343,6 +355,10 @@ html {
   0% {
     bottom: -10vh;
     opacity: 0;
+  }
+  50% {
+    top: 0rem;
+    opacity: 0.3;
   }
   100% {
     bottom: 0rem;
@@ -355,6 +371,10 @@ html {
     left: -90vw;
     opacity: 0;
   }
+  50% {
+    top: 0rem;
+    opacity: 0.3;
+  }
   100% {
     left: 0;
     opacity: 1;
@@ -365,6 +385,10 @@ html {
   0% {
     left: -90vw;
     opacity: 0;
+  }
+  50% {
+    top: 0rem;
+    opacity: 0.3;
   }
   100% {
     left: 0;
@@ -377,6 +401,10 @@ html {
     right: -90vw;
     opacity: 0;
   }
+  50% {
+    top: 0rem;
+    opacity: 0.3;
+  }
   100% {
     right: 0rem;
     opacity: 1;
@@ -388,6 +416,10 @@ html {
     right: -90vw;
     opacity: 0;
   }
+  50% {
+    top: 0rem;
+    opacity: 0.3;
+  }
   100% {
     right: 0rem;
     opacity: 1;
@@ -396,26 +428,26 @@ html {
 
 .animate-top {
   position: relative;
-  -webkit-animation: animate-top 0.35s ease-in 0.2s forwards;
-          animation: animate-top 0.35s ease-in 0.2s forwards;
+  -webkit-animation: animate-top 0.35s ease-in 1s forwards;
+          animation: animate-top 0.35s ease-in 1s forwards;
 }
 
 .animate-bottom {
   position: relative;
-  -webkit-animation: animate-bottom 0.35s ease-in 0.2s forwards;
-          animation: animate-bottom 0.35s ease-in 0.2s forwards;
+  -webkit-animation: animate-bottom 0.35s ease-in 1s forwards;
+          animation: animate-bottom 0.35s ease-in 1s forwards;
 }
 
 .animate-left {
   position: relative;
-  -webkit-animation: animate-left 0.35s ease-in 0.2s forwards;
-          animation: animate-left 0.35s ease-in 0.2s forwards;
+  -webkit-animation: animate-left 0.35s ease-in 1s forwards;
+          animation: animate-left 0.35s ease-in 1s forwards;
 }
 
 .animate-right {
   position: relative;
-  -webkit-animation: animate-right 0.35s ease-in 0.2s forwards;
-          animation: animate-right 0.35s ease-in 0.2s forwards;
+  -webkit-animation: animate-right 0.35s ease-in 1s forwards;
+          animation: animate-right 0.35s ease-in 1s forwards;
 }
 
 .heroshot {

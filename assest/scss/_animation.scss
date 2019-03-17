@@ -1,39 +1,43 @@
 @keyframes animate-top {
     0% { top: -10vh; opacity: 0;}
+    50% { top: 0rem; opacity: 0.3;}
     100% { top: 0rem; opacity: 1;}
   }
 
   @keyframes animate-bottom {
     0% { bottom: -10vh; opacity: 0;}
+    50% { top: 0rem; opacity: 0.3;}
     100% { bottom: 0rem; opacity: 1;}
   }
 
   @keyframes animate-left {
     0% { left: -90vw; opacity: 0;}
+    50% { top: 0rem; opacity: 0.3;}
     100% { left: 0; opacity: 1;}
   }
 
   @keyframes animate-right {
     0% { right: -90vw; opacity: 0;}
+    50% { top: 0rem; opacity: 0.3;}
     100% { right: 0rem; opacity: 1;}
   }
 
     .animate-top {
         position: relative;
-        animation: animate-top 0.35s ease-in 0.2s forwards;
+        animation: animate-top 0.35s ease-in 1s forwards;
     }
     .animate-bottom {
         position: relative;
-        animation: animate-bottom 0.35s ease-in 0.2s forwards;
+        animation: animate-bottom 0.35s ease-in 1s forwards;
     }
 
     
     .animate-left {
         position: relative;
-        animation: animate-left 0.35s ease-in 0.2s forwards;
+        animation: animate-left 0.35s ease-in 1s forwards;
     }
 
     .animate-right {
         position: relative;
-        animation: animate-right 0.35s ease-in 0.2s forwards;
+        animation: animate-right 0.35s ease-in 1s forwards;
     }
