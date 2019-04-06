@@ -137,6 +137,28 @@ html {
   bottom: -10vh;
 }
 
+.aminities-wrap {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+}
+
+.aminities-wrap .aminities-icon {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.aminities-wrap h4.box-light-title {
+  font-size: 1.8rem;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.aminities-wrap .aminities-icon {
+  font-size: 3rem;
+  color: #c19b76;
+}
+
 .navbar {
   height: 5rem;
   background-color: #303030;

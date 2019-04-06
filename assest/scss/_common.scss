@@ -82,6 +82,7 @@ html {
 }
 .p-y-10 {
     padding-top: 1rem;
+
 }
 .p-y-20 {
     padding-top: 2rem;
@@ -109,3 +110,25 @@ html {
         bottom: -10vh;
     }
 }
+
+.aminities-wrap {
+    font-family: $font-work;
+    font-size: $size-md;
+    .aminities-icon {
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    h4.box-light-title {
+        font-size: 1.8rem;
+        font-family:$font-stand;
+        font-weight: 400;
+        padding-bottom:20px; 
+    }
+    
+    .aminities-icon {
+        font-size:3rem;
+        color: #c19b76;
+    }
+}
+
