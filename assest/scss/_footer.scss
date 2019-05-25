@@ -1,0 +1,84 @@
+@import './variables';
+
+.footer {
+    &-link-box {
+      
+        min-width: 150px;
+        margin-top: 3rem;
+    }
+    &-head {
+        color: $white;
+        font-size: 2.3rem;
+       @extend %fontstandard;
+       padding: $size-lg 0;
+       font-weight: 500;
+       letter-spacing: 1.2px;
+    }
+    &-section {
+        background-color: $nav-color;
+        font-size: $size-lg;
+        font-family: $font-stand;
+        padding: 0 10px;
+        color: $color-para;
+          .line-bottom {
+            border-bottom: 1px solid $white;
+        }
+        ul {
+            list-style: none;
+            li {
+                @extend %fontworksans;
+                color:$white;
+                line-height: 1.5rem;
+                width: 50%; 
+                color:rgb(211, 213, 219);
+                cursor: pointer;
+                line-height: $size-lg;
+                color:$white;
+                font-size:1.3rem;
+                white-space: nowrap;
+                line-height: 1.6rem;
+                display: block;
+                padding: 0.7rem 0;
+                font-weight: 300;
+             }
+        }
+        
+        ul.listitems {
+            margin-top: 2rem !important; 
+            li {
+                padding-left: 4rem; 
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 20px;
+                    height: 20px;
+                    margin:  0 auto;
+                    display: inline-block;
+                    background-size: cover;
+                    left: 0.5rem;
+                    border-radius: 50%;
+                }
+                &.icon-call::before {
+                    background:white url('./../icons/baseline-call-24px.svg') no-repeat center center;
+                }
+                &.icon-email::before {
+                    background:white url('./../icons/baseline-email-24px.svg') no-repeat center center;
+                }
+                &.icon-location::before {
+                    background:white url('./../icons/baseline-room-24px.svg') no-repeat center center;
+                }
+            }
+            
+        }  
+        .copyright {
+            font-size: 1.3rem;
+            text-align: center;
+            color: $white;
+            @extend %fontworksans;
+            line-height: 2rem;
+            padding: 4rem 0 2rem;
+        }
+    } 
+   
+}

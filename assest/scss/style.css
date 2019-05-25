@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Old+Standard+TT|Work+Sans");
+.footer-head {
+  font-family: 'Old Standard TT', serif;
+}
+
+.footer-section ul li, .footer-section .copyright {
+  font-family: 'Work Sans', sans-serif;
+}
+
 html {
   font-size: 10px;
 }
@@ -48,6 +56,11 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.flex.mobile-flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .error {
@@ -157,6 +170,18 @@ html {
 .aminities-wrap .aminities-icon {
   font-size: 3rem;
   color: #c19b76;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.footer-head {
+  font-family: 'Old Standard TT', serif;
+}
+
+.footer-section ul li, .footer-section .copyright {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .navbar {
@@ -326,6 +351,100 @@ html {
   position: relative;
   text-indent: -200rem;
   overflow: hidden;
+}
+
+.footer-head {
+  font-family: 'Old Standard TT', serif;
+}
+
+.footer-section ul li, .footer-section .copyright {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.footer-link-box {
+  min-width: 150px;
+  margin-top: 3rem;
+}
+
+.footer-head {
+  color: #fff;
+  font-size: 2.3rem;
+  padding: 3rem 0;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.footer-section {
+  background-color: #303030;
+  font-size: 3rem;
+  font-family: "Old Standard TT", serif;
+  padding: 0 10px;
+  color: rgba(21, 21, 21, 0.7);
+}
+
+.footer-section .line-bottom {
+  border-bottom: 1px solid #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  color: #fff;
+  line-height: 1.5rem;
+  width: 50%;
+  color: #d3d5db;
+  cursor: pointer;
+  line-height: 3rem;
+  color: #fff;
+  font-size: 1.3rem;
+  white-space: nowrap;
+  line-height: 1.6rem;
+  display: block;
+  padding: 0.7rem 0;
+  font-weight: 300;
+}
+
+.footer-section ul.listitems {
+  margin-top: 2rem !important;
+}
+
+.footer-section ul.listitems li {
+  padding-left: 4rem;
+  position: relative;
+}
+
+.footer-section ul.listitems li::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  display: inline-block;
+  background-size: cover;
+  left: 0.5rem;
+  border-radius: 50%;
+}
+
+.footer-section ul.listitems li.icon-call::before {
+  background: white url("./../icons/baseline-call-24px.svg") no-repeat center center;
+}
+
+.footer-section ul.listitems li.icon-email::before {
+  background: white url("./../icons/baseline-email-24px.svg") no-repeat center center;
+}
+
+.footer-section ul.listitems li.icon-location::before {
+  background: white url("./../icons/baseline-room-24px.svg") no-repeat center center;
+}
+
+.footer-section .copyright {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+  line-height: 2rem;
+  padding: 4rem 0 2rem;
 }
 
 @-webkit-keyframes animate-top {

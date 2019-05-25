@@ -33,6 +33,10 @@ html {
     &.mobile-flex-dir-column {
         flex-direction: column;
     }
+    &.mobile-flex-wrap {
+        flex-wrap: wrap;
+    }
+
 }
 
 .error {
@@ -132,3 +136,6 @@ html {
     }
 }
 
+.nowrap {
+    white-space: nowrap;
+}
